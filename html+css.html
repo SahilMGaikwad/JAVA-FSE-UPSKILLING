@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Event Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#0f4c81;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:#e8f1fb;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#0f4c81;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.btn{
+    background:#0f4c81;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Events */
+
+.events{
+    padding:50px;
+}
+
+.events h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    color:#0f4c81;
+    margin-bottom:10px;
+}
+
+/* Registration Form */
+
+.register{
+    padding:50px;
+}
+
+.register h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.submit-btn{
+    width:100%;
+    background:#0f4c81;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+}
+
+/* Footer */
+
+footer{
+    background:#0f4c81;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:10px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>EventHub</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Community Event Portal</h1>
+    <p>Explore and Register for Exciting Community Events</p>
+    <button class="btn">Register Now</button>
+</section>
+
+<section class="events">
+
+<h2>Upcoming Events</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600" alt="">
+<div class="card-content">
+<h3>Music Festival</h3>
+<p>Enjoy live music performances and entertainment.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="">
+<div class="card-content">
+<h3>Food Carnival</h3>
+<p>Experience delicious foods from different cultures.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600" alt="">
+<div class="card-content">
+<h3>Sports Day</h3>
+<p>Participate in exciting games and competitions.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="register">
+
+<h2>Event Registration</h2>
+
+<form>
+
+<input type="text" placeholder="Enter Name" required>
+
+<input type="email" placeholder="Enter Email" required>
+
+<input type="date" required>
+
+<select required>
+<option>Select Event</option>
+<option>Music Festival</option>
+<option>Food Carnival</option>
+<option>Sports Day</option>
+</select>
+
+<textarea rows="4" placeholder="Message"></textarea>
+
+<button class="submit-btn">Submit Registration</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Community Event Portal | Salem</p>
+</footer>
+
+</body>
+</html>
